@@ -1,0 +1,29 @@
+{
+	"exp_name": "try to fix the long sequence problem",
+	"gpu": "0",
+	"u_net_d": 10,
+	"BATCH_SIZE": 16,
+	"batch_size_stage_1": 20,
+	"batch_size_stage_2": 16,
+	"OUT_STEP": 100,
+	"LOAD_MODEL": true,
+	"pp_steps": 20,
+	"pp_loss": "f1",
+	"pp_model": "final",
+	"rho_per_position": "single",
+	"data_type": "rnastralign_all",
+	"test_data_type": "archiveII_all",
+	"model_type": "att_simple_fix",
+	"epoches_first": 0, 
+	"epoches_second": 0,
+	"epoches_third": 0,
+	"evaluate_epi": 1,
+	"evaluate_epi_stage_1": 5,
+	"step_gamma": 1,
+	"k": 1,
+	"test": {
+		"f1": true,
+		"accuracy": false,
+		"energy": false
+	}
+}
