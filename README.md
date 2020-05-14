@@ -33,6 +33,7 @@ Finally the project should have the following folder structure:
 ```
 e2efold
 |___e2efold  # source code
+|___e2efold_productive  # productive code for handling new sequences
 |___data  # data
     |___archiveII_all
     |___rnastralign_all_600
