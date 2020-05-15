@@ -47,6 +47,14 @@ e2efold
 ...
 ```
 
+## Prediction for user's input sequence
+
+To directly use our trained model to make prediction for any RNA sequence, please refer to the information in `/e2efold_productive` folder.
+
+## Reproduce experimental results in the paper
+
+To reproduce the experiments in our paper, please refer to the following steps:
+
 ## Test with trained model
 You can download the [pretrained models](https://drive.google.com/open?id=1m038Fw0HBGEzsvhS0mRxd0U7cGXqLAVt) and put the `.pt` files in the folder `/models_ckpt`.
 
