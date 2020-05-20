@@ -1,5 +1,5 @@
 {
-	"exp_name": "performance on short sequences",
+	"exp_name": "performance on short sequences (50-600)",
 	"test_folder": "short_seqs",
 	"save_folder": "short_cts",
 	"gpu": "0",
