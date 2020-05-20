@@ -56,8 +56,8 @@ seed_torch(0)
 ######!!!!#######
 # to be confirmed#
 ######!!!!#######
-seq_len = 1800
-print('Max seq length ', seq_len)
+max_len = 1800
+print('Max seq length ', max_len)
 model_len=600
 print('Model length ', model_len)
 
@@ -114,7 +114,7 @@ for file_name in files:
     sequences.append(load_seq(os.path.join(folder,file_name)))
 
 querys = list(zip(files, sequences))
-querys = list(filter(lambda x: len(x[1])<=seq_len, querys))
+querys = list(filter(lambda x: len(x[1])<=max_len, querys))
 
 names, sequences = zip(*querys)
 
@@ -123,30 +123,60 @@ lag_pp_net.eval()
 
 final_result_dict = dict()
 
-######!!!!#######
-# to be changed#
-######!!!!#######
-# batch_n = 0
-# for seq_embedding_batch, PE_batch, _, comb_index, seq_embeddings, contacts, seq_lens in test_generator_1800:
 
-#     state_pad = torch.zeros(1,2,2).to(device)
-#     seq_embedding_batch = seq_embedding_batch[0].to(device)
-#     PE_batch = PE_batch[0].to(device)
-#     seq_embedding = torch.Tensor(seq_embeddings.float()).to(device)
-#     contact_masks = torch.Tensor(contact_map_masks(seq_lens, 1800)).to(device)
+ct_list = list()
 
-#     with torch.no_grad():
-#         pred_contacts = contact_net(PE_batch, seq_embedding_batch, state_pad)
-#         pred_u_map = combine_chunk_u_maps_no_replace(pred_contacts, comb_index, 6)
-#         pred_u_map = pred_u_map.unsqueeze(0)
-#         a_pred_list = lag_pp_net(pred_u_map, seq_embedding)
+for seq in sequences:
+    state_pad = torch.zeros(1,2,2).to(device)
 
-#     # the learning pp result
-#     final_pred = (a_pred_list[-1].cpu()>0.5).float()
+    seq_len = len(seq)
 
+    seq_embeddings = padding(seq_encoding(seq), max_len)
 
+    PE = get_pe(torch.Tensor([seq_len]).long(), max_len).numpy()
+    PE = torch.Tensor(PE[0]).float()
+
+    small_seqs, comb_index_1 = get_chunk_combination(torch.Tensor(seq_embeddings).float())
+    PE_small_seqs, comb_index_2 = get_chunk_combination(PE)
+
+    assert comb_index_1==comb_index_2
+
+    seq_embedding_batch = torch.cat([seq.unsqueeze_(0) for seq in small_seqs], 0).float()
+    PE_batch = torch.cat([pe.unsqueeze_(0) for pe in PE_small_seqs], 0).float()
 
 
+    seq_embedding_batch = seq_embedding_batch.to(device)
+    PE_batch = PE_batch.to(device)
+    seq_embedding = torch.Tensor(seq_embeddings).float().to(device)
 
+    with torch.no_grad():
+        pred_contacts = contact_net(PE_batch, seq_embedding_batch, state_pad)
+        pred_u_map = combine_chunk_u_maps_no_replace(pred_contacts, comb_index_1, 6)
+        pred_u_map = pred_u_map.unsqueeze(0)
+        a_pred_list = lag_pp_net(pred_u_map, seq_embedding.unsqueeze(0))
+
+    # the learning pp result
+    final_pred = (a_pred_list[-1].cpu()>0.5).float()
+
+    ct_tmp = contact2ct(final_pred[0].cpu().numpy(), 
+        seq_embedding.cpu().numpy(), seq_len)
+    ct_list.append(ct_tmp)
+
+# for saving the results
+save_path = config.save_folder
+if not os.path.exists(save_path):
+    os.makedirs(save_path)
+
+def save_file(folder, file, ct_contact):
+        file_path = os.path.join(folder, file)
+        first_line = str(len(ct_contact)) + '\t' + file + '\n'
+        content = ct_contact.to_csv(header=None, index=None, sep='\t')
+        with open(file_path, 'w') as f:
+                f.write(first_line+content)
+
+
+for i in range(len(names)):
+    save_file(save_path, names[i]+'.ct', ct_list[i])
+    
 
 
