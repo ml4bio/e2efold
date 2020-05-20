@@ -8,4 +8,7 @@ The sample input sequences are in folder `short_seqs`. When use the package, ple
 
 
 ## For longer sequences (600<seq<1800)
-The code is similar but with some matrix manipulation tricks for saving memory. It will be uploaded be the end of May 2020.
+```
+sh main_long.sh
+```
+The results are similar to the short ones.
