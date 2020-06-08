@@ -5,6 +5,7 @@ pytorch implementation for [RNA Secondary Structure Prediction By Learning Unrol
 [<a href="https://cse.gatech.edu/news/633633/machine-learning-tool-may-help-us-better-understand-rna-viruses">GaTech news</a>]
 [<a href="https://www.jiqizhixin.com/articles/2020-02-18-8">Chinese news</a>]
 [<a href="https://mp.weixin.qq.com/s/eyWlQdRqrnnxOKv0TF6gmA">Chinese introduction</a>]
+[<a href="https://github.com/ml4bio/e2efold/blob/master/slides_and_articles/long_abstract.pdf">Plain explanation</a>]
 
 
 ## Setup
