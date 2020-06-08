@@ -50,6 +50,7 @@ e2efold
 |___results
 |___experiment_archiveii
 |___experiment_rnastralign
+|___slides_and_articles    # slides and articles related to the project 
 ...
 ```
 
