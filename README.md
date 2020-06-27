@@ -82,7 +82,7 @@ python e2e_learning_stage3.py -c config.json
 python e2e_learning_stage3_rnastralign_all_long.py -c config_long.json
 ```
 
-## Reproduce the training process
+## Reproduce the training process or re-train the model on a new dataset
 
 The model is trained on the RNAstralign training set. To reproduce the training process, you can navigate to the folder
 `e2efold_rnastralign` and run:
@@ -96,6 +96,7 @@ python e2e_learning_stage1_rnastralign_all_long.py -c config_long.json
 python e2e_learning_stage3_rnastralign_all_long.py -c config_long.json 
 ```
 
+Given the training logic implemented in the above python files, you can modify the data generator to re-train the model on other datasets. Our data generator in defined in `e2efold/data_generator.py`. You could probably choose to define a Sub Class based on the Class `RNASSDataGenerator`.
 
 
 ## Citation
