@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ded29766-d687-480d-97ed-7c6609e4329f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/ct2npy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/find_blast.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/pickup_seqs_for_test_set.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/preprocess_bprna.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/preprocess_bprna_old.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/preprocess_bprna_without_promap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold/evaluation-backup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold/new_common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold/new_common/cmd_args.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold/new_common/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold/new_common/consts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold/new_common/data_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold/new_common/long_seq_pre_post_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold/new_common/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold_old/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold_old/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold_old/common/cmd_args.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold_old/common/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold_old/common/long_seq_pre_post_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold_old/common/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold_old/data_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold_old/evaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold_old/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2efold_old/postprocess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bpRNA_e2efold/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bpRNA_e2efold/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bpRNA_e2efold/config_long.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bpRNA_e2efold/e2e_learning_stage1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bpRNA_e2efold/e2e_learning_stage1_rnastralign_all_long.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bpRNA_e2efold/e2e_learning_stage3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bpRNA_e2efold/e2e_learning_stage3_rnastralign_all_long.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bpRNA_e2efold/main.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bprna/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bprna/config-backup.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bprna/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bprna/e2e_learning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bprna/e2e_learning_stage1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bprna/e2e_learning_stage3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bprna/model_evaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bprna/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiment_bprna/postprocess_lagrangian_v2_batch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/common/cmd_args.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/common/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/common/consts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/common/data_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/common/long_seq_pre_post_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/common/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/diff_lag_pp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/diff_lag_pp/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/diff_lag_pp/e2e_learning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/diff_lag_pp/e2e_learning_stage1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/diff_lag_pp/e2e_learning_stage3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/diff_lag_pp/model_evaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/diff_lag_pp/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/diff_lag_pp/postprocess_lagrangian_v2_batch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/cmd_args.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/consts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/data_generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/long_seq_pre_post_process.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diff_lag_pp/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diff_lag_pp/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diff_lag_pp/e2e_learning.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diff_lag_pp/e2e_learning_stage1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diff_lag_pp/e2e_learning_stage3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diff_lag_pp/model_evaluation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diff_lag_pp/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diff_lag_pp/postprocess_lagrangian_v2_batch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2efold/evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2efold/evaluation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2efold/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2efold/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2efold_productive/e2efold_productive_short.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2efold_productive/e2efold_productive_short.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2efold_productive/main_short.sh" beforeDir="false" afterPath="$PROJECT_DIR$/e2efold_productive/main_short.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment_rnastralign/e2e_learning_stage1.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment_rnastralign/e2e_learning_stage1.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2CAiiJhhoSMTkPVI1lPbUykHyBO" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Research\Experiment\RNA\github\E2Efold-FM" />
+      <recent name="D:\Research\Experiment\RNA\github\E2Efold-FM\data" />
+      <recent name="D:\Research\Experiment\RNA\github\E2Efold-FM\experiment_bprna" />
+      <recent name="D:\Research\Experiment\RNA\github\E2Efold-FM\e2efold" />
+      <recent name="D:\Research\Experiment\RNA\github\E2Efold-FM\train" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.find_blast">
+    <configuration name="e2e_learning_stage1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="E2Efold-FM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/experiment_bprna" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experiment_bprna/e2e_learning_stage1.py" />
+      <option name="PARAMETERS" value="-c config.json" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="find_blast" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="E2Efold-FM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/find_blast.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pickup_seqs_for_test_set" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="E2Efold-FM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/pickup_seqs_for_test_set.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="preprocess_bprna" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="E2Efold-FM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/preprocess_bprna.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.e2e_learning_stage1" />
+      <item itemvalue="Python.pickup_seqs_for_test_set" />
+      <item itemvalue="Python.preprocess_bprna" />
+      <item itemvalue="Python.find_blast" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.find_blast" />
+        <item itemvalue="Python.e2e_learning_stage1" />
+        <item itemvalue="Python.preprocess_bprna" />
+        <item itemvalue="Python.pickup_seqs_for_test_set" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ded29766-d687-480d-97ed-7c6609e4329f" name="Default Changelist" comment="" />
+      <created>1658251915222</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658251915222</updated>
+      <workItem from="1658251918641" duration="1497000" />
+      <workItem from="1658320968282" duration="32980000" />
+      <workItem from="1658596045464" duration="6391000" />
+      <workItem from="1658660323106" duration="1824000" />
+      <workItem from="1658681020047" duration="3493000" />
+      <workItem from="1658795106794" duration="2635000" />
+      <workItem from="1658857282205" duration="599000" />
+      <workItem from="1658928802808" duration="3783000" />
+      <workItem from="1659058862184" duration="1455000" />
+      <workItem from="1659227444390" duration="1813000" />
+      <workItem from="1659253167292" duration="6906000" />
+      <workItem from="1659368690764" duration="599000" />
+      <workItem from="1659446029244" duration="10622000" />
+      <workItem from="1659715156836" duration="14974000" />
+      <workItem from="1659802197828" duration="8509000" />
+      <workItem from="1659881826927" duration="10820000" />
+      <workItem from="1659976850061" duration="2363000" />
+      <workItem from="1660039368650" duration="10781000" />
+      <workItem from="1660142273377" duration="9504000" />
+      <workItem from="1660398326253" duration="913000" />
+      <workItem from="1660448636088" duration="599000" />
+      <workItem from="1660481376600" duration="1812000" />
+      <workItem from="1660608105661" duration="3689000" />
+      <workItem from="1660698809959" duration="6220000" />
+      <workItem from="1660840992966" duration="5308000" />
+      <workItem from="1661136461231" duration="1331000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/E2Efold_FM$find_blast.coverage" NAME="find_blast Coverage Results" MODIFIED="1661136538920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/E2Efold_FM$e2e_learning_stage1.coverage" NAME="e2e_learning_stage1 Coverage Results" MODIFIED="1660055403889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment_bprna" />
+    <SUITE FILE_PATH="coverage/E2Efold_FM$pickup_seqs_for_test_set.coverage" NAME="pickup_seqs_for_test_set Coverage Results" MODIFIED="1658596050653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/E2Efold_FM$preprocess_bprna.coverage" NAME="preprocess_bprna Coverage Results" MODIFIED="1659788714500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+  </component>
+</project>
