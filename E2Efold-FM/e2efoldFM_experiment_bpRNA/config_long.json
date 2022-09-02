@@ -1,0 +1,28 @@
+{
+	"exp_name": "deal with longer RNAs",
+	"gpu": "0",
+	"u_net_d": 10,
+	"BATCH_SIZE": 8,
+	"batch_size_stage_1": 20,
+	"batch_size_stage_2": 16,
+	"OUT_STEP": 100,
+	"LOAD_MODEL": true,
+	"pp_steps": 20,
+	"pp_loss": "f1",
+	"pp_model": "final",
+	"rho_per_position": "single",
+	"data_type": "rnastralign_all",
+	"model_type": "att_simple_fix",
+	"epoches_first": 50, 
+	"epoches_second": 10,
+	"epoches_third": 10,
+	"evaluate_epi": 1,
+	"evaluate_epi_stage_1": 5,
+	"step_gamma": 1,
+	"k": 1,
+	"test": {
+		"f1": true,
+		"accuracy": false,
+		"energy": false
+	}
+}
