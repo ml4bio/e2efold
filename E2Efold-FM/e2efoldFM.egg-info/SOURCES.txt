@@ -1,7 +1,0 @@
-README.md
-setup.py
-e2efold.egg-info/PKG-INFO
-e2efold.egg-info/SOURCES.txt
-e2efold.egg-info/dependency_links.txt
-e2efold.egg-info/requires.txt
-e2efold.egg-info/top_level.txt
