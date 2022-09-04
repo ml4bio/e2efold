@@ -12,7 +12,7 @@ This is the pytorch implementation of E2Efold-FM.
 
 ## System Requirements
 
-The `E2Efold-FM` package is built under the Linux system with the softwares [Anaconda](https://www.anaconda.com/) and [Pytorch](https://pytorch.org/). The versions of the software dependencies that the `E2Efold-FM` package has been tested on are provided in the `environment.yml`. Users can conveniently create the same environment by running the command:
+The `E2Efold-FM` package is built under the Linux system with the popular softwares [Anaconda](https://www.anaconda.com/) and [Pytorch](https://pytorch.org/). The versions of the software dependencies that the `E2Efold-FM` package has been tested on are provided in the `environment.yml`. Users can conveniently create the same environment by running the command:
 ```
 conda env create -f environment.yml
 ```
