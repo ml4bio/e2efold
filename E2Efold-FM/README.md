@@ -4,7 +4,7 @@ E2Efold-FM: accurate RNA secondary structure prediction with end-to-end deep neu
 pytorch implementation for E2Efold-FM
 
 
-![Overview](./pics/E2Efold-FM_overview.pdf)
+![Overview](./pics/E2Efold-FM_overview.svg)
 
 
 
