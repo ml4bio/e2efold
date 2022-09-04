@@ -1,7 +1,7 @@
 # E2Efold-FM 
 E2Efold-FM: accurate RNA secondary structure prediction with end-to-end deep neural networks and RNA foundation model
 
-This is the pytorch implementation of E2Efold-FM.
+This is the Pytorch implementation of E2Efold-FM.
 
 
 ![Overview](./pics/E2Efold-FM_overview.svg)
@@ -23,7 +23,7 @@ conda env create -f environment.yml
 ```
 
 
-The `E2Efold-FM` package does not require non-standard hardware.
+The `E2Efold-FM` package does not require any non-standard hardware.
 
 
 
@@ -42,18 +42,18 @@ conda env create -f environment.yml
 
 Please navigate to the root of this repository, and run the following command to install the package e2efoldFM:
 ```
-conda activate e2efoldFM     # activate the enviornment
+conda activate e2efoldFM     # activate the environment
 pip install -e .     # install the package
 ```
 
 
-Adjust the version of the Prtorch according to the types of the graphics processing units (GPUs) research machine that you use. In our computation we use NVIDIA RTX3090, so we update the Pytorch to `torch==1.10.0` by running the command:
+Adjust the version of the Prtorch according to the type of GPU research machine that you use for running this package. In the test we use NVIDIA RTX3090, so we update the Pytorch to version 1.10.0 by running the command:
 ```
 pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 ```
 
 
-The inatsllment is fast and the install time of the whole package is less than 5 minutes. 
+The installment of this package is fast and the whole install time is less than 5 minutes. 
 
 
 
@@ -64,17 +64,12 @@ The project has the following folder structure:
 
 ```
 E2Efold-FM
+|___data  # data
 |___e2efoldFM  # source code
 |___e2efoldFM_productive  # productive code for handling new sequences
-|___data  # data
-    |___archiveII_all
-    |___rnastralign_all_600
-    |___rnastralign_all
-    |___preprocess_archiveii.py  # just as a reference. no need to run.
-    |......
 |___models_ckpt  # trained models
-|___results
 |___pics
+|___results
 ...
 ```
 
@@ -82,9 +77,9 @@ E2Efold-FM
 
 
 
-## Demo and instractions for use
+## Demo and instructions for use
 
-To directly use our trained model to make prediction for any RNA sequence, please refer to the information in `./e2efoldFM_productive` folder.
+To directly use our trained model to make prediction for any RNA sequence, please refer to the information in the `./e2efoldFM_productive` folder.
 
 
 The sample RNA input sequences are under the `./e2efoldFM_productive/seqs` folder.
@@ -93,11 +88,8 @@ The sample RNA input sequences are under the `./e2efoldFM_productive/seqs` folde
 The expected output of these sample RNA input sequences are provided the folders: `./e2efoldFM_productive/cts` and `./e2efoldFM_productive/npy`.
 
 
-The running speed of this package is very fast, for about 40 sequences, it takes only several seconds to complete the prediction.
+The running speed of this package is very fast, it takes only several seconds to complete predictions for about 40 sequences.
 
 
-The procedure of using this package to perform prediction is provided in the `README.md` file of the `./e2efoldFM_productive` folder.
-
-
-
+The procedure of using this package to perform predictions is provided in the `README.md` file under the `./e2efoldFM_productive` folder.
 
