@@ -1,10 +1,12 @@
 # E2Efold-FM 
 E2Efold-FM: accurate RNA secondary structure prediction with end-to-end deep neural networks and RNA foundation model
 
-pytorch implementation for E2Efold-FM
+This is the pytorch implementation of E2Efold-FM.
 
 
 ![Overview](./pics/E2Efold-FM_overview.svg)
+
+
 
 
 
@@ -14,7 +16,6 @@ The `E2Efold-FM` package is built under the Linux system with the softwares [Ana
 ```
 conda env create -f environment.yml
 ```
-
 
 
 
