@@ -4,6 +4,8 @@ E2Efold-FM: accurate RNA secondary structure prediction with end-to-end deep neu
 pytorch implementation for E2Efold-FM
 
 
+![Overview](./E2Efold-FM_overview.pdf)
+
 
 
 # System Requirements
@@ -16,10 +18,12 @@ conda env create -f environment.yml
 
 
 
-# Installation guide
-## Setup
 
-### Install the package
+
+# Installation guide
+
+
+## Install the package
 The environment that we use is given in `environment.yml`. You can create the same environment by running the command:
 ```
 conda env create -f environment.yml
@@ -33,20 +37,9 @@ pip install -e .     # install the package
 ```
 
 
-### Data
+## Folder structure
 
-Please download the RNA secondary structure [data](https://drive.google.com/open?id=19KPRYJjjMJh1qdMhtmUoYA_ncw3ocAHc) and put all the `.tgz` files in the `/data` folder. Then navigate to the `/data` folder and run:
-```
-tar -xzf rnastralign_all.tgz
-tar -xzf rnastralign_all_600.tgz
-tar -xzf archiveII_all.tgz
-```
-These files contain the processed data. As a reference, the codes for preprocessing the data are also given in this `/data` folder.
-
-
-### Folder structure
-
-Finally the project should have the following folder structure:
+The project has the following folder structure:
 
 ```
 E2Efold-FM
@@ -62,6 +55,7 @@ E2Efold-FM
 |___results
 ...
 ```
+
 
 
 
