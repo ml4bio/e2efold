@@ -40,7 +40,7 @@ conda env create -f environment.yml
 ```
 
 
-Please navigate to the root of this repository, and run the following command to install the package e2efoldFM:
+Please navigate to the `./E2Efold-FM` folder of this repository, and run the following command to install the package e2efoldFM:
 ```
 conda activate e2efoldFM     # activate the environment
 pip install -e .     # install the package
