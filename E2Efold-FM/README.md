@@ -4,13 +4,13 @@ E2Efold-FM: accurate RNA secondary structure prediction with end-to-end deep neu
 pytorch implementation for E2Efold-FM
 
 
-![Overview](./E2Efold-FM_overview.pdf)
+![Overview](./pics/E2Efold-FM_overview.pdf)
 
 
 
-# System Requirements
+## System Requirements
 
-The `E2Efold-FM` package is built and tested under the Linux system. The versions of the software dependencies that the `E2Efold-FM` package has been tested on are provided in the `environment.yml`. Users can conveniently create the same environment by running the command:
+The `E2Efold-FM` package is built under the Linux system with the softwares [Anaconda](https://www.anaconda.com/) and [Pytorch](https://pytorch.org/). The versions of the software dependencies that the `E2Efold-FM` package has been tested on are provided in the `environment.yml`. Users can conveniently create the same environment by running the command:
 ```
 conda env create -f environment.yml
 ```
@@ -19,11 +19,10 @@ conda env create -f environment.yml
 
 
 
+## Installation guide
 
-# Installation guide
 
-
-## Install the package
+### Install the package
 The environment that we use is given in `environment.yml`. You can create the same environment by running the command:
 ```
 conda env create -f environment.yml
@@ -37,7 +36,7 @@ pip install -e .     # install the package
 ```
 
 
-## Folder structure
+### Folder structure
 
 The project has the following folder structure:
 
@@ -53,6 +52,7 @@ E2Efold-FM
     |......
 |___models_ckpt  # trained models
 |___results
+|___pics
 ...
 ```
 
@@ -60,7 +60,7 @@ E2Efold-FM
 
 
 
-# Demo and instractions for use
+## Demo and instractions for use
 
 To directly use our trained model to make prediction for any RNA sequence, please refer to the information in `/e2efoldFM_productive` folder.
 
