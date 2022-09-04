@@ -1,0 +1,30 @@
+{
+	"exp_name": "performance on sequences (<500)",
+	"test_folder": "seqs",
+	"save_folder": "cts",
+	"gpu": "0",
+	"u_net_d": 10,
+	"BATCH_SIZE": 8,
+	"batch_size_stage_1": 20,
+	"batch_size_stage_2": 16,
+	"OUT_STEP": 100,
+	"LOAD_MODEL": true,
+	"pp_steps": 30,
+	"pp_loss": "f1",
+	"pp_model": "mixed",
+	"rho_per_position": "matrix",
+	"data_type": "SPOT_RNA_500",
+	"model_type": "no_noise",
+	"epoches_first": 50, 
+	"epoches_second": 10,
+	"epoches_third": 10,
+	"evaluate_epi": 1,
+	"evaluate_epi_stage_1": 5,
+	"step_gamma": 1,
+	"k": 1,
+	"test": {
+		"f1": true,
+		"accuracy": false,
+		"energy": false
+	}
+}
