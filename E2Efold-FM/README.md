@@ -30,7 +30,7 @@ The `E2Efold-FM` package does not require any non-standard hardware.
 
 
 
-## 2. Installation guide
+## 2. Installation Guide
 
 
 ### Install the package
@@ -77,7 +77,7 @@ E2Efold-FM
 
 
 
-## 3. Demo and instructions for use
+## 3. Demo and Instructions for Use
 
 To directly use our trained model to make prediction for any RNA sequence, please refer to the information in the `./e2efoldFM_productive` folder.
 
@@ -100,7 +100,7 @@ The procedure of using this package to perform predictions is provided in the `R
 
 
 
-## 4. Easy-to-use Online Version - E2Efold-FM server.
+## 4. Online Version - E2Efold-FM server.
 
 If you have any trouble with the deployment of the local version of E2Efold-FM, you can access the online server of this package from this link, [E2Efold-FM](https://proj.cse.cuhk.edu.hk/aihlab/e2efoldFM/#/), which is freely available without any registration requirement.
 
