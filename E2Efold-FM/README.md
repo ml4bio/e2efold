@@ -47,7 +47,7 @@ pip install -e .     # install the package
 ```
 
 
-Adjust the version of the Prtorch according to the type of GPU research machine that you use for running this package. In the test we use NVIDIA RTX3090, so we update the Pytorch to version 1.10.0 by running the command:
+Adjust the version of the Pytorch according to the type of GPU research machine that you use for running this package. In the test we use NVIDIA RTX3090, so we update the Pytorch to version 1.10.0 by running the command:
 ```
 pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 ```
