@@ -25,7 +25,7 @@ pip install -e .
 
 ### Data
 
-Please download the RNA secondary structure [data](https://drive.google.com/open?id=19KPRYJjjMJh1qdMhtmUoYA_ncw3ocAHc) and put all the `.tgz` files in the `/data` folder. Then run:
+Please download the RNA secondary structure [data](https://gocuhk-my.sharepoint.com/:f:/g/personal/yuli_cuhk_edu_hk/EsmL09vDN3RDucN4I3JyOdEBpD4M4ToqShvYu57-1nOFoA?e=236Pix) and put all the `.tgz` files in the `/data` folder. Then run:
 ```
 tar -xzf rnastralign_all.tgz
 tar -xzf rnastralign_all_600.tgz
