@@ -64,7 +64,7 @@ To directly use our trained model to make prediction for any RNA sequence, pleas
 To reproduce the experiments in our paper, please refer to the following steps:
 
 ## Test with trained model
-You can download the [pretrained models](https://drive.google.com/open?id=1m038Fw0HBGEzsvhS0mRxd0U7cGXqLAVt) and put the `.pt` files in the folder `/models_ckpt`.
+You can download the [pretrained models](https://gocuhk-my.sharepoint.com/:f:/g/personal/yuli_cuhk_edu_hk/Ekuec1yiSc9Jp7leSEYtsvABJyhIVXAblV0wb-8PrTezMg?e=eqXvzd) and put the `.pt` files in the folder `/models_ckpt`.
 
 ### RNAStralign
 You can navigate to the `/experiment_ranstralign` folder and run the following command to test the model on RNAStralign test dataset:
